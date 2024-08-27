@@ -48,10 +48,13 @@ table {
 }
 /** end reset css**/
 body {
-	max-width: 1140px;
-	margin:auto;
+	width: 100%;
 	font-family: 'Work Sans' ;
 	font-size: 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 3.7em;
 }
 header {
 	display: flex;
@@ -59,7 +62,7 @@ header {
 	margin: 50px 0
 }
 section {
-	margin: 50px 0
+	margin: 50px 0;
 }
 
 h1{
@@ -112,7 +115,8 @@ li:hover {
 }
 
 #introduction article {
-	flex: 1
+	flex: 1;
+	max-width: 400px;
 }
 #introduction h2 {
 	margin-bottom: 1em;
@@ -121,9 +125,15 @@ li:hover {
 #introduction p {
 	margin-bottom: 0.5em;
 }
+
+#portfolio {
+	display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
 #portfolio h2 {
 	text-align: center;
-	margin-bottom: 1em;
 }
 .gallery {
 	width: 100%;
@@ -138,8 +148,12 @@ li:hover {
 
 }
 #contact {
-	width: 50%;
-margin: auto;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #contact > * {
 	text-align: center;
@@ -150,7 +164,7 @@ margin: auto;
 }
 #contact form {
 	text-align: left;
-	margin-top:30px;
+	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
 }
@@ -160,6 +174,7 @@ margin: auto;
 	font-size: 1.2em;
 	border: none;
 	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+	box-sizing: border-box;
 }
 #contact label {
 	margin: 2em 0 1em 0;
@@ -186,3 +201,470 @@ footer nav ul {
 	margin: 2em
 }
 
+footer li {
+	font-family: 'Work Sans';
+	font-weight: 300;
+	cursor: pointer;
+}
+
+/*index.html*/
+#footer {
+	width: 100%;
+	background-color: #FFFFFF;
+	margin: 0;
+}
+
+/* navigation */
+.insta_logo {
+	width: 50%;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 4em;
+}
+
+/* Main block index*/
+
+.index_main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4em;
+	max-width: 2000px;
+	margin: auto;
+}
+
+/*filtres*/
+.filters {
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+
+}
+
+.filter_btn {
+	box-sizing: border-box;
+	border-radius: 60px;
+	border-width: 1.55px;
+	border-color: #1D6154;	;
+	padding: .6em 1.2em;
+	color : #1D6154;
+	font-weight: 700;
+	font-family: 'Syne';
+}
+
+body, .filter_btn {
+	background-color: #FFFEF8;
+}
+
+.selected {
+	background-color: #1D6154;
+	color: #FFFFFF;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/*login.hmtl*/
+.logout {
+	cursor: pointer;	
+}
+
+.main_login_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+.main_login_container h2 {
+	font-family: 'Syne';
+}
+
+.login_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3em;
+}
+
+form, .email_2, .password_2 {
+	width: 100%;
+	max-width: 450px;
+	display: flex;
+	flex-direction: column;
+}
+
+form {
+	gap: 2em;
+	font-family: 'Work Sans';
+	font-weight: 500;
+	gap: 3em;
+}
+
+.email_2, .password_2 {
+	gap: .5em;
+	font-size: 1.2em;
+}
+
+#email, #password {
+	width: 100%;
+	box-shadow: 0px 4px 10px 0px #00000017;
+	border-color: transparent;
+	padding: 1.5em;
+	box-sizing: border-box;
+	width: 500px;
+}
+
+form .submit_btn_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1em;
+}
+
+form #submit_btn {
+	padding: .6em 1.2em;
+	width: 180px;
+	border-color: transparent;
+	cursor: pointer;
+}
+
+form a {
+	text-decoration: underline;
+	color: #3D3D3D;
+	font-family: 'Work Sans';
+	font-weight: 500;
+}
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1500px;
+}
+
+
+html {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+/*Mode edit - après connection*/
+
+.edit_banner {
+	width: 100%;
+	justify-content: center;
+	gap: 1em;
+	padding: 1em;
+	background: #000000;
+	color: #FFFFFF;
+	font-weight: 400;
+	display: none;
+}
+
+.titles {
+	display: flex;
+	gap: 2em;
+	align-items: center;
+}
+
+.title h2 {
+	padding-left: 5em;
+}
+
+.modif {
+	display: none;
+	gap: .5em;
+	cursor: pointer;
+	align-items: center;
+}
+
+header a:hover {
+	color:#B1663C;
+}
+
+
+
+/*modales*/
+.hidden {
+	display: none;
+}
+
+/*delete modal*/
+
+
+.modal_container {
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 28em;
+	background: #0000004D;
+	overflow: auto;
+	display: none;
+}
+
+.modal {
+	background: #FFFFFF;
+	padding: 2em 7em 3em 7em;
+	gap: 3em;
+}
+
+.delete_header {
+	display: flex;
+	justify-content: end;
+	width: 100%;
+
+
+}
+
+
+.delete_content {
+	gap: 3em;
+    width: 550px;
+    height: 750px;
+	margin: 0 3em;
+}
+
+.delete_content .img_container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: start;
+	gap: 1em;
+	column-gap: 1em;
+    height: 600px;
+	max-width: 520px;
+}
+
+.img_container article {
+	width: 90px;
+	position: relative;
+}
+
+.img_container article button {
+    background: #000000;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 10em;
+    left: 4.8em;
+    padding: 3px;
+}
+
+.img_container article i {
+    color: #FFFFFF;
+	font-size: .7em;
+}
+
+.img_container article img {
+	width: 100%;
+	height: 135px;
+}
+
+.add_photo_btn {
+	border-radius: 60px;
+	background: #1D6154;
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 1.2em;
+	color: #FFFFFF;
+	padding: .6em 3.3em;
+	border-color: transparent;
+}
+
+.delete_header i {
+	cursor: pointer;
+}
+
+/*****add modal************/
+.modal {
+	position: absolute;
+}
+#add_modal {
+	display: none;
+}
+
+.add_header {
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 35em;
+}
+
+.fa-arrow-left {
+	font-size: 1.7em;
+	margin-left: -2em;
+}
+
+.fa-xmark {
+	margin-right: -2em;
+	font-size: 1.5em;
+}
+
+.add_content {
+	gap: 3em;
+	margin: 0 6.5em 2.1em 6.5em;
+}
+
+.add_content, .add_content form, .add_container, .modal, .delete_content, .img_downloader {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#modal2 h2, .add_container, .add_btn {
+	font-family: 'Work Sans';
+}
+
+#modal2 h2 {
+	color: #000000;
+	font-weight: 400;
+	font-size: 2em;
+}
+
+.add_container {
+    background: #E8F1F6;
+    padding: 0 10em;
+    gap: .5em;
+}
+
+.add_container i {
+	font-size: 5em;
+	color: #B9C5CC;
+}
+
+.add_container, .img_downloader, .img_preview {
+	height: 250px;
+}
+
+.img_downloader{
+	gap: 1em;
+	padding: 2.5em 0;
+}
+
+.img_preview {
+	width: 300px;
+    position: relative;
+    bottom: 18.5em;
+}
+
+.toggle_show {
+	opacity: 1;
+}
+
+.toggle_hide {
+	opacity: 0;
+}
+
+.add_btn {
+	border-radius: 50px;
+	padding: .5em 2.5em;
+	cursor: pointer;
+	color: #306685;
+	background: #CBD6DC;
+	border-color: transparent;
+	text-wrap: nowrap;
+	font-weight: 500;
+	font-size: 1.1em;
+}
+
+#file {
+    position: relative;
+    top: 3.2em;
+    left: 5em;
+    opacity: 0;
+    cursor: pointer;
+    width: 300px;
+    z-index: 1;
+}
+
+.add_btn input {
+	position: absolute;
+	right: 55em;
+	opacity: 0;
+}
+
+.add_container p {
+	font-size: .7em;
+	font-weight: 400;
+}
+
+/******titre + catégorie********/
+.field {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1em;
+	font-size: 1.2em;
+}
+
+.field .first {
+	position: relative;
+    right: 16.1em;
+}
+
+.field .second {
+	position: relative;
+    right: 15em;
+}
+
+.field input, .field select {
+	color: #6C6C6C;
+	width: 580px;
+	box-shadow: 0px 4px 14px 0px #00000017;
+	border-color: transparent;
+	padding: 1.5em 0;
+	font-size: 1em;
+}
+
+.hr1 {
+    width: 520px;
+}
+
+hr {
+	width: 580px;
+}
+
+.modal2_submit_btn input {
+	margin: 0;
+	width: 100%;
+	color: #FFFFFF;
+	background: #1D6154;
+	font-family: 'Syne';
+	font-weight: 700;
+	border-radius: 60px;
+	border-color: transparent;
+	padding: .5em 7em;
+}
+
+.btn-disabled {
+	background: #A7A7A7!important;
+	color: #FFFFFF!important;
+}
+
+.fa-trash-can, button, .fa-xmark, .fa-arrow-left {
+	cursor: pointer;
+}
+
+#valid {
+	color: #1D6154;
+}
